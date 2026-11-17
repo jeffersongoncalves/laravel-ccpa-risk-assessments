@@ -1,3 +1,5 @@
 <?php
 
-uses(JeffersonGoncalves\CcpaRiskAssessments\Tests\TestCase::class)->in('Feature', 'Unit');
+use JeffersonGoncalves\CcpaRiskAssessments\Tests\TestCase;
+
+uses(TestCase::class)->in('Feature', 'Unit');

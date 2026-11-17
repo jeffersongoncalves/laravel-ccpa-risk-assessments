@@ -3,14 +3,18 @@
 namespace JeffersonGoncalves\CcpaRiskAssessments\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use JeffersonGoncalves\CcpaRiskAssessments\RiskAssessmentManager;
 
 /**
- * @see \JeffersonGoncalves\CcpaRiskAssessments\CcpaRiskAssessments
+ * @method static list<array{activity: \JeffersonGoncalves\CcpaNotices\Models\ProcessingActivity, reasons: list<string>}> candidates()
+ * @method static array<string, mixed> export(\JeffersonGoncalves\CcpaRiskAssessments\Models\RiskAssessment $assessment)
+ *
+ * @see RiskAssessmentManager
  */
 class CcpaRiskAssessments extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'laravel-ccpa-risk-assessments';
+        return RiskAssessmentManager::class;
     }
 }
