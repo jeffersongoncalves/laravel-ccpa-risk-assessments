@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.0 - 2026-11-18
+
+### Changed
+
+- Requires the 2.0 of the suite core, which runs on [laravel-privacy](https://github.com/jeffersongoncalves/laravel-privacy), the engine shared by the privacy suites. No change to this package's API, config or tables.
+
 ## 1.0.0 - 2026-11-17
 
 First release: CCPA/CPRA risk assessments (CCPA Regulations, Article 10) for Laravel, part of the laravel-ccpa suite.
